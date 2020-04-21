@@ -1,0 +1,26 @@
+/**
+ * Metodos HTTP:
+ *
+ * GET : Buscar uma informação do back-end
+ * POST: Criar uma informação no back-end
+ * PUT: Alterar uma informação no backeend
+ * DELETE: Deletar uma informação no back-end
+ */
+/**
+ * Tipos de parametros
+ *
+ * Query: Parametros nomeados enviados na rota após o simbolo de ? (Filtros, paginação)
+ * Route Params: Parametros utilizados para identificar recursos
+ * Request Body: Corpo da requisição, utilizando para criar ou alterar recursos
+ */
+
+/**
+ * SQL: MySQl, SQLite, PostgreSQL, Oracle, MS SQL Server
+ * NoSQL: MongoDB, CouchDB, etc
+ */
+
+/**
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where() -- Vontagem é utilizar outros bancos sem mudar o codigo
+ * Exemplo Knex
+ */
