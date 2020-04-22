@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./global.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Routes from "./routes";
+
+//Componente é uma função que retorna HTML.
+//Componentes devem iniciar com a letra Maiuscula
+//Quando o HTMl esta dentro de um arquivo JavaScript vai se chamar JSX
+//Propriedades: é o exemplo de um atributo no HTML exemplo o title="texto"
+//Estado: é uma propriedade do componente onde colocamos dados que, quando mudados, devem causar uma nova renderização.
+//Imutabilidade:
+export default function App() {
+  return <Routes />;
 }
-
-export default App;
