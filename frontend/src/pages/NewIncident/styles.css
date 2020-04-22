@@ -44,3 +44,11 @@
 .new-incident-container .content form textarea {
   margin-top: 8px;
 }
+
+.new-incident-container .content form .button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.new-incident-container .content form .button-group button + button {
+  margin-left: 8px;
+}

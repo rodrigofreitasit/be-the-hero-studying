@@ -15,6 +15,11 @@ export default function NewIncident() {
   const ongId = localStorage.getItem("ongId");
   const history = useHistory();
 
+  function handleCancelar(e) {
+    e.preventDefault();
+    history.push("/profile");
+  }
+
   async function handleNewIncident(e) {
     e.preventDefault();
     const data = {
@@ -71,10 +76,18 @@ export default function NewIncident() {
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
-
-          <button className="button" type="submit">
-            Cadastrar
-          </button>
+          <div className="button-group">
+            <button
+              onClick={handleCancelar}
+              className="button-cancelar"
+              type="submit"
+            >
+              Cancelar
+            </button>
+            <button className="button" type="submit">
+              Cadastrar
+            </button>
+          </div>
         </form>
       </div>
     </div>
